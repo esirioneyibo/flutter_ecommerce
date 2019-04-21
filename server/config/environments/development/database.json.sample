@@ -1,0 +1,20 @@
+{
+  "defaultConnection": "default",
+  "connections": {
+    "default": {
+      "connector": "strapi-hook-mongoose",
+      "settings": {
+        "client": "mongo",
+        "host": "<YOUR DEV DB HOST>",
+        "port": <YOUR DEV DB PORT>,
+        "database": "<YOUR DEV DB NAME>",
+        "username": "<YOUR DEV DB USERNAME>",
+        "password": "<YOUR DEV DB PASSWORD>",
+        "srv": true
+      },
+      "options": {
+        "ssl": true
+      }
+    }
+  }
+}
