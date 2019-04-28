@@ -7,6 +7,7 @@ const _USERNAME_MIN_LENGTH = 6;
 const _PASSWORD_MIN_LENGTH = 6;
 
 class RegisterPage extends StatefulWidget {
+  static const ROUTE = '/register';
   @override
   _RegisterPageState createState() => _RegisterPageState();
 }

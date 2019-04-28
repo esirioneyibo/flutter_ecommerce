@@ -6,6 +6,7 @@ import '../services/auth.dart' as authService;
 const _PASSWORD_MIN_LENGTH = 6;
 
 class LoginPage extends StatefulWidget {
+  static const ROUTE = '/login';
   @override
   _LoginPageState createState() => _LoginPageState();
 }

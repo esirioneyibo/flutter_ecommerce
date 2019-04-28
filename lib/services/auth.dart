@@ -36,4 +36,5 @@ void _storeUserData(responseData) async {
   Map<String, dynamic> user = responseData['user'];
   user.putIfAbsent('jwt', () => responseData['jwt']);
   prefs.setString('user', json.encode(user));
+  // Dispatch action to save user data (?)
 }
