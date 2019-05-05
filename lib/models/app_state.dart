@@ -6,13 +6,12 @@ import 'package:meta/meta.dart';
 @immutable
 class AppState {
   final dynamic user;
+  final List<dynamic> products;
 
   // We don't want to create state if the user is not provided (@required)
-  AppState({@required this.user});
+  AppState({@required this.user, @required this.products});
 
   factory AppState.initial() {
-    return AppState(
-      user: null,
-    );
+    return AppState(user: null, products: []);
   }
 }

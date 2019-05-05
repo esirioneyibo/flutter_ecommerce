@@ -26,6 +26,7 @@ class _LoginPageState extends State<LoginPage> {
     return Padding(
       padding: EdgeInsets.only(top: 20.0),
       child: TextFormField(
+        initialValue: "testmail@testmail.com",
         keyboardType: TextInputType.emailAddress,
         onSaved: (value) => _email = value,
         validator: (value) => !isEmail(value) ? 'Enter a valid email' : null,
@@ -42,6 +43,7 @@ class _LoginPageState extends State<LoginPage> {
     return Padding(
       padding: EdgeInsets.only(top: 20.0),
       child: TextFormField(
+        initialValue: "testuser",
         onSaved: (value) => _password = value,
         validator: (value) => !isLength(value, _PASSWORD_MIN_LENGTH)
             ? 'Password must be longer than $_PASSWORD_MIN_LENGTH characters'

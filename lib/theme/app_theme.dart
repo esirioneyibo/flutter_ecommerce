@@ -11,8 +11,8 @@ final ThemeData appTheme = ThemeData(
   // Notice that the counter didn't reset back to zero; the application
   // is not restarted.
   backgroundColor: Colors.grey[300],
-  primaryColor: Colors.pink[900],
-  accentColor: Colors.red[500],
+  primaryColor: Colors.green[900],
+  accentColor: Colors.lime[700],
   textTheme: TextTheme(
     headline: TextStyle(
       fontSize: 35.0,
